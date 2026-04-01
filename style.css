@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(226, 74, 117);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(185, 184, 184);
+    min-height: 100vh;
+}
+
+.container {
+    border: hidden;
+    border-radius: 7px;
+    background-color: #393939;
+    color: whitesmoke;
+    padding: 35px 50px;
+    min-height: 500px;
+    min-width: 400px;
+}
+
+.inpTask-div{
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    padding: 8px 4px;
+    color: rgb(185, 184, 184);
+    margin-top: 10px;
+}
+
+.inpTask-div > input{
+    border: none;
+    min-width: 370px;
+    background-color: #393939;
+    color: rgb(185, 184, 184);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.inpTask-div > input:focus{
+    outline: none;
+}
+
+.inpTask-div > i{
+    font-size: 15px;
+}
+
+.eachTask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgb(50, 50, 50);
+    padding-bottom: 20px;
+}
+
+.check-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+.check-p > i{
+    color: rgb(226, 74, 117);
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+
+.menu{
+    border: hidden;
+    background-color: #5c5656;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.menu > p{
+    cursor: pointer;
+}
+
+.menu > p:hover{
+    transform: scale(0.9, 0.9);
+}
+
+.menu > p:active{
+    transform: scale(1.2, 1.2);
+}
+
+.menu > p:last-child{
+    padding-top: 15px;
+}
+
+.menu > p:last-child > i{
+    transform: rotate(-45deg);
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    color: rgb(185, 184, 184);
+    background-color: #393939;
+    font-weight: 700;
+    font-size: 20px;
+}
